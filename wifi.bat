@@ -1,4 +1,7 @@
 @echo off
+Rem Skrypt zapisujący zapamiętane w systemie hasła wifi do pliku wifi.txt
+Rem A script that saves WiFi passwords saved in the system to the wifi.txt file
+
 setlocal enabledelayedexpansion
 
 for /F "tokens=2 delims=:" %%a in ('netsh wlan show profile') do (
